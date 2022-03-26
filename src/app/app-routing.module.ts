@@ -13,6 +13,7 @@ const routes: Routes = [
     path: 'inscription',
     component: PageInscriptionComponent
   },
+  /*
   {
     path:'',
     component: PageDashboardComponent,
@@ -22,6 +23,7 @@ const routes: Routes = [
     }
   ]
 }
+*/
 ];
 
 @NgModule({
