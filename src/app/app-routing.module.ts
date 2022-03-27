@@ -20,7 +20,7 @@ const routes: Routes = [
     component: PageDashboardComponent,
   children: [
     {
-      path:'statistique',
+      path:'statistiques',
       component: PageStatistiquesComponent
     }
   ]
