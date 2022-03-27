@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageDashboardComponent } from './page-dashboard/page-dashboard.component';
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
+import { PageStatistiquesComponent } from './page-statistiques/page-statistiques.component';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
 
 const routes: Routes = [
@@ -10,18 +11,21 @@ const routes: Routes = [
     component: PageLoginComponent
   },
   {
-    path: 'inscription',
+    path: 'inscrire',
     component: PageInscriptionComponent
   },
+
   {
     path:'',
     component: PageDashboardComponent,
   children: [
     {
-      path:'articles',
+      path:'statistiques',
+      component: PageStatistiquesComponent
     }
   ]
 }
+
 ];
 
 @NgModule({
