@@ -10,10 +10,10 @@ const routes: Routes = [
     component: PageLoginComponent
   },
   {
-    path: 'inscription',
+    path: 'inscrire',
     component: PageInscriptionComponent
   },
-  /*
+
   {
     path:'',
     component: PageDashboardComponent,
@@ -23,7 +23,7 @@ const routes: Routes = [
     }
   ]
 }
-*/
+
 ];
 
 @NgModule({
