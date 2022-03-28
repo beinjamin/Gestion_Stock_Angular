@@ -103,6 +103,28 @@ export class MenuComponent implements OnInit {
 
     ]
 
+  },
+  {
+    id:'5',
+    titre: 'Parametrage',
+    icon: '',
+    url:'',
+    sousMenu: [
+      {
+        id:'51',
+        titre: 'Categories',
+        icon: '',
+        url:''
+      },
+
+      {
+        id:'52',
+        titre: 'Utilisateurs',
+        icon: '',
+        url:''
+      }
+
+    ]
   }
   ];
 
