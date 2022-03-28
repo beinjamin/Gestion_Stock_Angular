@@ -9,6 +9,7 @@ import { Menu } from './menu';
 export class MenuComponent implements OnInit {
 
   public menuProperties : Array<Menu> = [{
+
     id:'1',
     titre: 'Tableau de bord',
     icon: '',
@@ -21,6 +22,7 @@ export class MenuComponent implements OnInit {
         url:''
       },
 
+
       {
         id:'2',
         titre: 'Statistique',
@@ -28,9 +30,88 @@ export class MenuComponent implements OnInit {
         url:''
       }
 
+
     ]
+  },
+
+
+  {
+    id:'2',
+    titre: 'Articles',
+    icon: '',
+    url:'',
+    sousMenu: [
+      {
+        id:'21',
+        titre: 'Articles',
+        icon: '',
+        url:''
+      },
+
+      {
+        id:'22',
+        titre: 'Mouvement du stock',
+        icon: '',
+        url:''
+      }
+
+    ]
+
+  },
+  {
+    id:'3',
+    titre: 'Clients',
+    icon: '',
+    url:'',
+    sousMenu: [
+      {
+        id:'31',
+        titre: 'Clients',
+        icon: '',
+        url:''
+      },
+
+      {
+        id:'32',
+        titre: 'Commande Clients',
+        icon: '',
+        url:''
+      }
+
+    ]
+
+  },
+  {
+    id:'4',
+    titre: 'Fournisseurs',
+    icon: '',
+    url:'',
+    sousMenu: [
+      {
+        id:'41',
+        titre: 'Fournisseur',
+        icon: '',
+        url:''
+      },
+
+      {
+        id:'42',
+        titre: 'Commande Fournisseur',
+        icon: '',
+        url:''
+      }
+
+    ]
+
   }
   ];
+
+
+
+
+
+
+
   constructor() { }
 
   ngOnInit(): void {
