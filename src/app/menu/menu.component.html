@@ -1,17 +1,30 @@
 <div class="accordion" id="accordionExample">
   <div class="card" *ngFor="let menu  of menuProperties" >
-  <div class="accordion-item">
-    <div class="accordion-header" id="{{ menu.id }}">
-      <h2 class="mb-8">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        {{ menu.titre  }}
-      </button>
-    </h2>
+    <div class="accordion-item">
+      <div class="accordion-header" id="menu{{ menu.id }}">
+        <h2 class="mb-8">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            [attr.data-target]="'#collapse' + menu.id "
+            aria-expanded="true" aria-controls="collapseOne">
+            {{ menu.titre  }}
+          </button>
+        </h2>
+      </div>
+
+        <div id="collapseOne{{ menu.id }}" class="accordion-collapse collapse show" [attr.aria-labelledby]="'menu + menu.id '" data-bs-parent="#accordionExample">
+
+          <div class="card" >
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"  *ngFor="let sousMenu of menu.sousMenu">
+                    <a>{{ sousMenu.titre }}</a>
+                  </li>
+
+              </ul>
+
+
+          </div>
     </div>
-
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby={{ menu.id }} data-bs-parent="#accordionExample" *ngFor="let sousMenu of menu.sousMenu ">
-
-      {{ sousMenu.titre }}
     </div>
   </div>
 </div>
