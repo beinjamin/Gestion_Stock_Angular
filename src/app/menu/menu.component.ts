@@ -13,13 +13,13 @@ export class MenuComponent implements OnInit {
 
     id:'1',
     titre: 'Tableau de bord',
-    icon: '',
+    icon: 'fas fa-chart-line',
     url: '',
     sousMenu: [
       {
         id:'11',
         titre: 'Vue ensemble',
-        icon: '',
+        icon: 'fas fa-chart-pie',
         url:''
       },
 
@@ -27,7 +27,7 @@ export class MenuComponent implements OnInit {
       {
         id:'2',
         titre: 'Statistique',
-        icon: '',
+        icon: 'fas fa-chart-bar',
         url:''
       }
 
@@ -39,20 +39,20 @@ export class MenuComponent implements OnInit {
   {
     id:'2',
     titre: 'Articles',
-    icon: '',
+    icon: 'fas fa-boxes',
     url:'',
     sousMenu: [
       {
         id:'21',
         titre: 'Articles',
-        icon: '',
+        icon: 'fas fa-boxes',
         url:''
       },
 
       {
         id:'22',
         titre: 'Mouvement du stock',
-        icon: '',
+        icon: 'fab fa-stock-overflow',
         url:''
       }
 
@@ -62,20 +62,20 @@ export class MenuComponent implements OnInit {
   {
     id:'3',
     titre: 'Clients',
-    icon: '',
+    icon: 'fas fa-users',
     url:'',
     sousMenu: [
       {
         id:'31',
         titre: 'Clients',
-        icon: '',
+        icon: 'fas fa-users',
         url:''
       },
 
       {
         id:'32',
         titre: 'Commande Clients',
-        icon: '',
+        icon: 'fas fa-shopping-basket',
         url:''
       }
 
@@ -91,14 +91,14 @@ export class MenuComponent implements OnInit {
       {
         id:'41',
         titre: 'Fournisseur',
-        icon: '',
+        icon: 'fas fa-users',
         url:''
       },
 
       {
         id:'42',
         titre: 'Commande Fournisseur',
-        icon: '',
+        icon: 'fas fa-truck',
         url:''
       }
 
@@ -108,7 +108,7 @@ export class MenuComponent implements OnInit {
   {
     id:'5',
     titre: 'Parametrage',
-    icon: '',
+    icon: 'fas fa-cogs',
     url:'',
     sousMenu: [
       {
@@ -121,7 +121,7 @@ export class MenuComponent implements OnInit {
       {
         id:'52',
         titre: 'Utilisateurs',
-        icon: '',
+        icon: 'fas fa-user-cog',
         url:''
       }
 
