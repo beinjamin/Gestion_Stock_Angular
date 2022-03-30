@@ -1,8 +1,8 @@
 <div class="accordion" id="accordionExample">
   <div class="card" *ngFor="let menu  of menuProperties" >
     <div class="accordion-item">
-      <div class="accordion-header" id="menu{{ menu.id }}">
-        <h2 class="mb-8">
+      <div class="card-header-header" id="menu{{ menu.id }}">
+        <h2 class="mb-0">
           <button class="accordion-button" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseOne"
             [attr.data-target]="'#collapse' + menu.id "
@@ -20,7 +20,7 @@
                   <li class="list-group-item" *ngFor="let sousMenu of menu.sousMenu">
 
                     <i class="{{ sousMenu.icon }}"></i>&nbsp;
-                    <a (click)="navigate(sousMenu.url)">{{ sousMenu.titre }}</a>
+                    <a href="javascript:void(0)" (click)="navigate(sousMenu.url)">{{ sousMenu.titre }}</a>
 
 
                   </li>

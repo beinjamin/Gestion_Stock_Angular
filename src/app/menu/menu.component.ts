@@ -52,7 +52,7 @@ export class MenuComponent implements OnInit {
       {
         id:'22',
         titre: 'Mouvement du stock',
-        icon: 'fab fa-stock-overflow',
+        icon: 'fab fa-stack-overflow',
         url:''
       }
 
@@ -114,7 +114,7 @@ export class MenuComponent implements OnInit {
       {
         id:'51',
         titre: 'Categories',
-        icon: '',
+        icon: 'fas fa-tools',
         url:''
       },
 
