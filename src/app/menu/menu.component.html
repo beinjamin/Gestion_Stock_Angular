@@ -1,1 +1,17 @@
-<p>menu works!</p>
+<div class="accordion" id="accordionExample">
+  <div class="card" *ngFor="let menu  of menuProperties" >
+  <div class="accordion-item">
+    <div class="accordion-header" id="{{ menu.id }}">
+      <h2 class="mb-8">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        {{ menu.titre  }}
+      </button>
+    </h2>
+    </div>
+
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby={{ menu.id }} data-bs-parent="#accordionExample" *ngFor="let sousMenu of menu.sousMenu ">
+
+      {{ sousMenu.titre }}
+    </div>
+  </div>
+</div>
