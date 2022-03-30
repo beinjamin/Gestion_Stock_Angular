@@ -142,7 +142,7 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-    navigate(url:string){
-
+    navigate(url?:string):void{
+    this.router.navigate([url]);
     }
 }

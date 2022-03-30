@@ -7,6 +7,7 @@
             data-bs-target="#collapseOne"
             [attr.data-target]="'#collapse' + menu.id "
             aria-expanded="true" aria-controls="collapseOne">
+            <i class="{{ menu.icon }}"></i>&nbsp;
             {{ menu.titre  }}
           </button>
         </h2>
@@ -16,8 +17,8 @@
 
           <div class="card" >
               <ul class="list-group list-group-flush">
-                  <li class="list-group-item"  *ngFor="let sousMenu of menu.sousMenu">
-                    <a>{{ sousMenu.titre }}</a>
+                  <li class="list-group-item" *ngFor="let sousMenu of menu.sousMenu">
+                    <a (click)="navigate(sousMenu.url)">{{ sousMenu.titre }}</a>
                   </li>
 
               </ul>
