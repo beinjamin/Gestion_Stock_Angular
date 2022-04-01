@@ -28,7 +28,7 @@ export class MenuComponent implements OnInit {
         id:'2',
         titre: 'Statistique',
         icon: 'fas fa-chart-bar',
-        url:''
+        url:'statistiques'
       }
 
 
@@ -85,7 +85,7 @@ export class MenuComponent implements OnInit {
   {
     id:'4',
     titre: 'Fournisseurs',
-    icon: '',
+    icon: 'fas fa-users',
     url:'',
     sousMenu: [
       {
