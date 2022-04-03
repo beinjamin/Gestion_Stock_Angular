@@ -8,6 +8,7 @@ import { PageInscriptionComponent } from './page-inscription/page-inscription.co
 import { PageDashboardComponent } from './page-dashboard/page-dashboard.component';
 import { PageStatistiquesComponent } from './page-statistiques/page-statistiques.component';
 import { MenuComponent } from './menu/menu.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MenuComponent } from './menu/menu.component';
     PageInscriptionComponent,
     PageDashboardComponent,
     PageStatistiquesComponent,
-    MenuComponent
+    MenuComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
