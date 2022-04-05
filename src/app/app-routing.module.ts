@@ -22,6 +22,10 @@ const routes: Routes = [
     {
       path:'statistiques',
       component: PageStatistiquesComponent
+    },{
+      path: 'articles',
+      component: PageArticleComponent 
+
     }
   ]
 }
