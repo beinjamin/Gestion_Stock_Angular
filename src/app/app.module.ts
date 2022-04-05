@@ -10,6 +10,7 @@ import { PageStatistiquesComponent } from './page-statistiques/page-statistiques
 import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { PageArticleComponent } from './page-article/page-article.component';
+import { DetailArticleComponent } from './detail-article/detail-article.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PageArticleComponent } from './page-article/page-article.component';
     PageStatistiquesComponent,
     MenuComponent,
     HeaderComponent,
-    PageArticleComponent
+    PageArticleComponent,
+    DetailArticleComponent
   ],
   imports: [
     BrowserModule,
