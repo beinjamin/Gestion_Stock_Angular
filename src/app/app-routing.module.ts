@@ -4,6 +4,8 @@ import { PageDashboardComponent } from './page-dashboard/page-dashboard.componen
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
 import { PageStatistiquesComponent } from './page-statistiques/page-statistiques.component';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
+import { PageArticleComponent } from './page-article/page-article.component';
+
 
 const routes: Routes = [
   {
@@ -22,6 +24,10 @@ const routes: Routes = [
     {
       path:'statistiques',
       component: PageStatistiquesComponent
+    },
+    {
+      path: 'articles',
+      component: PageArticleComponent
     }
   ]
 }
