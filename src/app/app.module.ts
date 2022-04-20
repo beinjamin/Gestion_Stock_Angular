@@ -9,10 +9,11 @@ import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.co
 import { PageStatistiquesComponent } from './pages/page-statistiques/page-statistiques.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { HeaderComponent } from './composants/header/header.component';
-import { PageArticleComponent } from './pages/page-article/page-article.component';
+import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
 import { DetailArticleComponent } from './composants/detail-article/detail-article.component';
 import { PaginationComponent } from './composants/pagination/pagination.component';
-import { BouttonActionComponent } from './boutton-action/boutton-action.component';
+import { BouttonActionComponent } from './composants/boutton-action/boutton-action.component';
+import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-article.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BouttonActionComponent } from './boutton-action/boutton-action.componen
     PageArticleComponent,
     DetailArticleComponent,
     PaginationComponent,
-    BouttonActionComponent
+    BouttonActionComponent,
+    NouvelArticleComponent
   ],
   imports: [
     BrowserModule,
