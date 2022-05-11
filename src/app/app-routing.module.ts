@@ -34,6 +34,10 @@ const routes: Routes = [
       path : 'nouvelarticle',
       component: NouvelArticleComponent
     },
+    {
+      path : 'mvtstk',
+      component: NouvelArticleComponent
+    },
   ]
 }
 
